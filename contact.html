@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            
+            <!-- 1. Text -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <!-- 2. Email -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!-- 3. Number -->
+            <p>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="100">
+            </p>
+
+            <!-- 4. Date -->
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </p>
+
+            <!-- 5. Radio buttons -->
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
+
+            <!-- 6. Checkboxes -->
+            <p>
+                <label>Preferred Contact Method:</label><br>
+                <input type="checkbox" id="contact_email" name="contact_method" value="email">
+                <label for="contact_email">Email</label>
+                <input type="checkbox" id="contact_phone" name="contact_method" value="phone">
+                <label for="contact_phone">Phone</label>
+            </p>
+
+            <!-- 7. Dropdown menu (Select) -->
+            <p>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </p>
+
+            <!-- 8. Large text box (Textarea) -->
+            <p>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+</body>
+</html>
